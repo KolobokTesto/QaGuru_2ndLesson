@@ -35,7 +35,6 @@ public class DataHolder {
     }
 
     static void clickCheckboxes() {
-
         $(".custom-control-label", 2).click();
         $(".custom-control-label", 4).click();
     }
@@ -46,10 +45,10 @@ public class DataHolder {
         $(".react-datepicker__day--0"+dayOfBirth).click();
     }
     static void fillStateCity(){
-        $("#state").click();
-        $("#stateCity-wrapper").$(byText(state)).click();
-        $("#city").click();
-        $("#stateCity-wrapper").$(byText(city)).click();
+        $("#state").scrollTo().click();
+        $("#stateCity-wrapper").$(byText(state)).scrollTo().click();
+        $("#city").scrollTo().click();
+        $("#stateCity-wrapper").$(byText(city)).scrollTo().click();
     }
     static void submit(){
         $("#submit").click();
